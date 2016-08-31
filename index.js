@@ -53,4 +53,3 @@ function list (_view, arr) {
 module.exports = view
 module.exports.attr = (key) => (doc) => doc[key]
 module.exports.list = list
-module.exports.event = event
