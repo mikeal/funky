@@ -1,5 +1,4 @@
 var yo = require('yo-yo')
-var array = require('array')
 
 function view (strings, ...inserts) {
   function _callInserts (args, getElement) {
