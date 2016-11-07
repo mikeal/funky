@@ -111,6 +111,7 @@ function view (strings, ...inserts) {
     // TODO: attach ShadowDOM
     element.yoyoOpts = {}
     element.update = function () {
+      if (element.onupdate) element.onupdate.apply(element, arguments)
       let newelement = element.processUpdate.apply(element, arguments)
       yo.update(element, newelement, element.yoyoOpts)
     }
