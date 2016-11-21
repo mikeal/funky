@@ -109,7 +109,7 @@ function view (strings, ...inserts) {
     var element = yo(parsed.elementStrings, ..._callInserts(args))
     parsed.constructors.forEach(c => c(...[element].concat(args)))
     // TODO: attach ShadowDOM
-    element.yoyoOpts = {}
+    element.yoyoOpts = {childrenOnly: true}
     element.update = function () {
       if (element.onupdate) element.onupdate.apply(element, arguments)
       let newelement = element.processUpdate.apply(element, arguments)
