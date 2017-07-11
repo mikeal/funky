@@ -1,5 +1,7 @@
 ## Funky
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mikeal/funky.svg)](https://greenkeeper.io/)
+
 Front-end view system using basic functional programming and template literals.
 
 ## Usage
